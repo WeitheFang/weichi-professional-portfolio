@@ -7,9 +7,28 @@
   padding: 0;
   margin: 0;
   background-color: white;
+  box-sizing: border-box;
   font-family: "Amatic SC", cursive;
 }
-/*header*/
+/*Hero*/
+.hero {
+  background-image: url(../images/hero-image.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: 100%;
+  height: 100px;
+}
+
+.hero-h2 {
+  position: relative;
+  top: 50px;
+  background-color: none;
+}
+/*nav bar*/
 header {
   font-size: 150%;
   padding: 20px;
@@ -34,6 +53,30 @@ header {
   text-decoration: underline;
 }
 /* Main section*/
-.about-me-img {
-  max-width: 300px;
+.main-article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.section-title {
+  font-size: 200%;
+  color: var(--title-color);
+  padding-bottom: 20px;
+  margin: 0 0 5px 50px;
+  flex: 0 0 10px;
+  text-align: right;
+}
+.section-border {
+  border-left: 2px solid;
+  margin: 0px 50px 20px 20px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  flex: 0 0 75%;
+  left: 300px;
+  color: var(--title-color);
+}
+.about-me-text {
+  flex: 0 0 70%;
+  align-self: center;
+  color: black;
 }
