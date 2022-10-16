@@ -2,12 +2,15 @@
 :root {
   --title-color: #274c77;
   --content-background: #e7ecef;
+  --text-color: black;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Amatic SC", cursive;
+  font-size: 105%;
+  font-weight: bolder;
 }
 /*Hero*/
 .hero {
@@ -23,17 +26,21 @@
 }
 
 .hero h2 {
-  font-size: 200%;
+  font-size: 300%;
 }
 /*nav bar*/
 header {
-  font-size: 150%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+header h1 {
+  font-size: 300%;
+  background-color: aqua;
+}
 .nav-links {
+  background-color: aqua;
   list-style: none;
 }
 .nav-links li {
@@ -48,15 +55,62 @@ header {
 .nav-links li a:hover {
   color: var(--title-color);
   text-decoration: underline;
+  font-size: 150%;
 }
 /* Main section*/
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.box {
+  padding: 0 35px;
+  margin: 10px;
+  color: var(--text-color);
+}
+
+.border {
+  flex: 0 0 20%;
+  border-right: 3px solid;
+  text-align: right;
+  font-size: 300%;
+  color: var(--title-color);
+  padding-bottom: 20px;
+}
+/*Contact me */
+.contact-me-text {
+  padding: 35px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+.contact-me-text li {
+  display: inline block;
+  padding: 0 20px;
+}
+.contact-me-text li a {
+  transition: all 0.3s ease 0s;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.contact-me-text li a:hover {
+  color: var(--title-color);
+  text-decoration: underline;
+  font-size: 150%;
+}
+/*about me*/
+/* CORRETCION
 .main-article {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-top: 20px;
 }
 .section-title {
-  font-size: 200%;
+  font-size: 300%;
   color: var(--title-color);
   padding-bottom: 20px;
   margin: 0 0 5px 50px;
@@ -75,5 +129,35 @@ header {
 .about-me-text {
   flex: 0 0 70%;
   align-self: center;
-  color: black;
+  color: var(--text-color);
 }
+*/
+
+/*contact me*/
+/* CORRECTION
+.contact-me-text {
+  align-self: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-me-text li {
+  display: inline-block;
+  padding: 0 20px;
+  color: var(--text-color);
+}
+.contact-me-text li a {
+  transition: all 0.3s ease 0s;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+}
+.contact-me-text li a:hover {
+  color: var(--title-color);
+  text-decoration: underline;
+}
+*/
