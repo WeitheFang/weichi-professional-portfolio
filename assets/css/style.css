@@ -151,3 +151,33 @@ header h1 {
   text-decoration: underline;
   font-size: 150%;
 }
+
+/*Footer*/
+Footer {
+  text-align: center;
+  align-self: baseline;
+}
+/*Media with screen size 768 px or smaller*/
+@media screen and (max-width: 768px) {
+  .work-large img {
+    width: 390px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 0.5%;
+    border: 10px solid var(--content-background);
+    margin: 10px;
+  }
+}
+
+/*Media with screen size 575 px or smaller*/
+
+@media screen and (max-width: 575px) {
+  header {
+    font-size: 100%;
+  }
+
+  .nav-links li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+}
