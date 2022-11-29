@@ -11,6 +11,7 @@ N/A
 ## Usage
 
 This portfolio was created for a showcase for my skills and talents to employers looking to fill a part-time or full-time position. 
+![alt text](assets/images/app-screen-shot.png)
 
 ## Credits
 
@@ -19,3 +20,5 @@ N/A
 ## License
 
 Please refer to the licence in the repo
+
+
